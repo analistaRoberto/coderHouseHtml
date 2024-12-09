@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+    
+   
+}
+
+body {
+background: #90B5CF;
+
+}
+  
+
+nav {
+    display: flex;
+
+}
+
+.logoContainer {
+    width: 10%;
+    height: 120px;
+
+
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.containerMenu {
+    width: 90%;
+    height: 120px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background: #3D5E6D;
+    
+
+}
+
+.containerName {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #FFFFFF;
+ 
+ }
+
+ .menuVisual {
+    width: 80%;
+    display: flex;
+    flex-direction: row; /* Asegura que los elementos estén en fila */
+    justify-content: end;
+    margin-right: 10%;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.menuVisual li:hover {
+    color: #E19A2e; /* Cambia el color a lo que desees */
+    text-decoration: underline; /* Subraya el texto */
+}
+
+
+.menuHorizontal {
+    display: flex;
+    flex-direction: row; /* Alinea los elementos horizontalmente */
+}
+
+.menuHorizontal li {
+    margin: 0 15px; /* Ajusta el margen entre elementos */
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    display: inline;
+    margin: 8px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.containerImgIndex {
+    width: 100%;
+    height: 500px;
+}
+
+.menuVisual ul {
+    display: flex; /* Alinea los elementos de la lista horizontalmente */
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Elimina los puntos de la lista */
+    justify-content: center; /* Centra los elementos */
+}
+
+.menuVisual li {
+    margin: 0 15px; /* Espacio entre elementos */
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    cursor: pointer; /* Agrega un cursor pointer */
+}
+
+.containerTitleH1{
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h2 {
+    color: #3D5E6D;
+    font-weight: 700;
+    font-size: 72px;
+    text-align: center;
+    
+}
+.containerArticle {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p {
+    width: 90%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #3D5E6D;
+    text-align: center;
+    
+}
+
+h2 {
+    color: #3D5E6D;
+    text-align: center;
+    font-size: 100px;
+}
+/* Contenedor principal de las tarjetas */
+.containerCard {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 90px; /* Aumenta el espacio entre filas de tarjetas */
+    padding: 20px;
+   
+}
+
+/* Contenedor de cada fila de tarjetas */
+.containerCardSecundario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px; /* Aumenta el espacio entre tarjetas dentro de la misma fila */
+}
+
+/* Estilo para cada tarjeta individual */
+.cardServicioTecnicoCard1, 
+.cardSoftware, 
+.cardDomotica, 
+.cardSeguridad {
+    width: 220px;
+    text-align: center;
+    border: 1px solid #3D5E6D;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin: 10px; /* Agrega espacio adicional alrededor de cada tarjeta */
+}
+
+/* Efecto hover para las tarjetas */
+.cardServicioTecnicoCard1:hover, 
+.cardSoftware:hover, 
+.cardDomotica:hover, 
+.cardSeguridad:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor de la imagen */
+.containerCardImg {
+    width: 100%; /* Asegura que el contenedor de la imagen ocupe todo el ancho */
+    height: 150px; /* Altura fija del contenedor de la imagen */
+    overflow: hidden; /* Evita que la imagen se salga del contenedor */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo de la imagen */
+.containerCardImg img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: 100%; /* La imagen ocupa toda la altura del contenedor */
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla, recortando si es necesario */
+    border-radius: 10px;
+}
+
+/* Texto dentro de la tarjeta */
+.txt {
+    margin: 10px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #3D5E6D;
+}
+
+/* Contenedor del botón */
+.button {
+    margin-top: 10px;
+}
+
+.button button {
+    background-color: #E19A2e;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s;
+}
+
+.button button:hover {
+    background-color: #2A4351;
+}
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Añade espacio entre los elementos */
+    background-color: #2A4351;
+}
+
+.conatinerDescripcion,
+.containerRedes {
+    flex: 1 1 45%; /* Ocupa el 45% del ancho de la pantalla */
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos internos se dispongan en columna */
+    margin: 5px;
+    background-color: #2A4351;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos de la lista se dispongan en columna */
+}
+
+li {
+    margin-bottom: 10px;
+    
+}
+.copyright {
+    width: 100%;
+ text-align: center;
+ color: #FFFFFF;
+}
