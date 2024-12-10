@@ -108,7 +108,7 @@ li {
 }
 
 .containerTitleH2 {
-    height: 200px;
+    height: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,10 +138,10 @@ p {
     font-weight: 400;
     font-size: 30px;
     color: #3D5E6D;
-    text-align: justify;
+    text-align: center;
 }
-.containerCard {
-    height: 500px;
+.containerCardN {
+    height: 300px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -149,14 +149,14 @@ p {
     padding: 20px;
    
 }
-.containerCardSecundario {
+.containerCardSecundarioN {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 200px; /* Aumenta el espacio entre tarjetas dentro de la misma fila */
     
 }
-.containerCardImg {
+.containerCardImgN {
     width: 300px; /* Asegura que el contenedor de la imagen ocupe todo el ancho */
     height: 200px; /* Altura fija del contenedor de la imagen */
     overflow: hidden; /* Evita que la imagen se salga del contenedor */

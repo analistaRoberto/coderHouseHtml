@@ -7,8 +7,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/servicioTecnico.css">
+    <link rel="stylesheet" href="../styles.css">
+
     <title>Document</title>
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('TkAb4eF1PWg_JEwje')
+  </script>
 </head>
 <header>
 
@@ -55,7 +63,7 @@
                     Servicio Técnico
                 </h2>
             </div>
-            <article class="containerArticle">
+            <article class="containerArticleN">
                 <p>
                     En Soluciones RP, brindamos un servicio técnico especializado, respaldado por un equipo de expertos
                     altamente capacitados y herramientas de última generación. Nos especializamos en la actualización y
@@ -76,19 +84,19 @@
                     nosotros para mantener tus dispositivos funcionando al máximo rendimiento.
                 </p>
             </article>
-            <article class="containerCard">
+            <article class="containerCardN">
                 <!-- Primera fila de tarjetas -->
-                <div class="containerCardSecundario">
+                <div class="containerCardSecundarioN">
                     <!-- Tarjeta Servicio Técnico -->
-                    <div class="cardServicioTecnicoCard1">
-                        <div class="containerCardImg">
+                    <div >
+                        <div class="containerCardImgN">
                             <img src="../asset/img/ServicioTecnico.jpg" alt="Servicio Técnico">
                         </div>
 
                     </div>
                     <!-- Tarjeta Software -->
-                    <div class="cardSoftware">
-                        <div class="containerCardImg">
+                    <div >
+                        <div class="containerCardImgN">
                             <img src="../asset/img/DesarrolloSoftare.jpg" alt="Software">
                         </div>
 
@@ -96,6 +104,27 @@
                 </div>
             </article>
         </section>
+        <form id="form">
+            <div class="field">
+              <label for="to_name">to_name</label>
+              <input type="text" name="to_name" id="to_name">
+            </div>
+            <div class="field">
+              <label for="from_name">from_name</label>
+              <input type="text" name="from_name" id="from_name">
+            </div>
+            <div class="field">
+              <label for="message">message</label>
+              <input type="text" name="message" id="message">
+            </div>
+            <div class="field">
+              <label for="reply_to">reply_to</label>
+              <input type="text" name="reply_to" id="reply_to">
+            </div>
+          
+            <input type="submit" id="button" value="Send Email" >
+          </form>
+          
         <footer>
             <div class="conatinerDescripcion">
                 <ul>
